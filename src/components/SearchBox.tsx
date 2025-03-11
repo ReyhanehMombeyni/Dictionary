@@ -13,9 +13,9 @@ const SearchBox = ({searchHandler}: searchHandlerType) => {
     }
 
   return (
-    <form onSubmit={formHandler}>
-        <input type="text" name="search" placeholder="input word..."  />
-        <button type="submit">Search</button>
+    <form onSubmit={formHandler} className="flex gap-3 w-xl">
+        <input type="text" name="search" className="input input w-full" placeholder="input word..."  />
+        <button type="submit" className="btn btn-primary">Search</button>
     </form>
   )
 }
